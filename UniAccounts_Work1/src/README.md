@@ -1,44 +1,34 @@
 # UniAccounts - Work 1
 
-This project implements the first practical work of the Design Patterns assignment.
+هذا المشروع يمثل أول عمل تطبيقي لمقياس أنماط التصميم (Design Patterns).
 
-## Patterns used
+## الأنماط المستخدمة (Patterns used)
 
-1. **Builder**
-   - Used to build `StudentAccount`.
-   - Required fields: `id`, `fullName`, `email`.
-   - Optional fields have the required defaults.
+1. البناء (Builder)
+   - يُستخدم لبناء كائن حساب الطالب (StudentAccount).
+   - الحقول الإلزامية: المعرف (id)، الاسم الكامل (fullName)، البريد الإلكتروني (email).
+   - الحقول الاختيارية لها القيم الافتراضية المطلوبة.
 
-2. **Singleton**
-   - `StudentRepository`: one central repository.
-   - `AuditLogger`: one shared audit log.
+2. النسخة الوحيدة (Singleton)
+   - StudentRepository: مستودع مركزي واحد.
+   - AuditLogger: سجل تدقيق واحد مشترَك.
 
-3. **Prototype**
-   - `StudentAccount.copyWithNewIdentity(...)` creates a new account by copying an existing account and changing the student's identity.
+3. النموذج الأولي (Prototype)
+   - StudentAccount.copyWithNewIdentity(...) لإنشاء حساب جديد عن طريق نسخ حساب موجود وتغيير هوية الطالب.
 
-## How to run
+## كيفية التشغيل (How to run)
 
-Open the `src` folder in VS Code.
+افتح مجلد src في برنامج VS Code.
 
-Compile:
+للترجمة (Compile):
 
-```bash
+`bash
 javac src/*.java
-```
-
-Run:
-
-```bash
+للتشغيل (Run):
 java -cp src Main
-```
-
-Or open `Main.java` in VS Code and run it using the Java extension.
-
-## Files
-
-- `StudentAccount.java`
-- `StudentRepository.java`
-- `AuditLogger.java`
-- `Main.java`
-
-The code contains comments identifying the Design Patterns and their roles.
+الملفات (Files)
+StudentAccount.java
+StudentRepository.java
+AuditLogger.java
+Main.java
+يحتوي الكود على تعليقات توضح أنماط التصميم المستخدمة وأدوارها.
